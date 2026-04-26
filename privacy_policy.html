@@ -24,6 +24,7 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
             margin: 36px 0 12px;
+            scroll-margin-top: 24px;
         }
         p { margin-bottom: 16px; font-size: 15px; color: #cccccc; }
         ul { padding-left: 20px; margin-bottom: 16px; }
@@ -38,32 +39,44 @@
 <body>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: April 2026</p>
+    <p class="updated">Last updated: 27 April 2026</p>
 
     <h2>Overview</h2>
     <p>
-        Dot Launcher is a minimalist Android home screen launcher. We are committed to
-        your privacy. This policy explains what data (if any) is collected and how it is used.
+        Dot Launcher is a minimalist Android home screen launcher. We do not operate any
+        servers and we do not run analytics, advertising, or tracking of any kind. This
+        policy explains the small amount of data that does leave your device — entirely
+        through Google Play's own services — and how you can manage it.
     </p>
 
     <h2>Data We Collect</h2>
     <p>
-        <strong>Dot Launcher does not collect, store, or transmit any personal data to
-        external servers.</strong> All preferences — including your grid layout, display mode,
-        colour settings, and Pro access state — are stored locally on your device only and
-        never leave it.
-    </p>
-
-    <h2>In-App Purchases</h2>
-    <p>
-        Dot Launcher Pro is available as a one-time in-app purchase. All payment processing
-        is handled entirely by Google Play. We do not receive, store, or process any payment
-        card or billing details.
+        Dot Launcher does not collect, store, or transmit personal data to systems we
+        control. All your preferences — grid layout, display mode, colour settings, Pro
+        access state — are stored locally on your device only and never leave it.
     </p>
     <p>
-        Please refer to
+        The only data that leaves your device does so through Google Play services, not
+        through us:
+    </p>
+    <ul>
+        <li>
+            <strong>Google Play Billing</strong> transmits your purchase of Dot Launcher
+            Pro — including the product ID, purchase token, transaction status, and the
+            Google account associated with the purchase — to Google so that the purchase
+            can be processed and restored on reinstall. We never see or store your name,
+            email address, postal address, or payment card details.
+        </li>
+        <li>
+            <strong>Google Play In-App Updates</strong> queries Google for available app
+            updates. This involves your installed app version and basic device information
+            being sent to Google.
+        </li>
+    </ul>
+    <p>
+        Both channels are operated by Google and use TLS encryption in transit. See
         <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>
-        for information on how your payment data is handled by Google.
+        for how Google handles this data.
     </p>
 
     <h2>Permissions</h2>
@@ -78,19 +91,32 @@
             apps from within the launcher.
         </li>
         <li>
-            <strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> — Requested so the launcher
-            remains available immediately when you press the Home button, even after periods
-            of inactivity.
+            <strong>POST_NOTIFICATIONS</strong> — Used to show a single notification when
+            your free trial of Pro features is ending. No marketing notifications are sent.
+        </li>
+        <li>
+            <strong>BIND_NOTIFICATION_LISTENER_SERVICE</strong> — Optional. Used only if
+            you enable the "halo rings" feature, which displays a coloured ring around an
+            app's dot when that app has an unread notification. Notification content is
+            never read, stored, or transmitted — only the fact that a notification exists.
+        </li>
+        <li>
+            <strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong> — Added
+            automatically by the Google Play Billing and Google Play In-App Updates
+            libraries. These are used solely by Google's libraries to communicate with
+            Google's servers, as described above. Dot Launcher itself makes no other
+            network requests.
         </li>
     </ul>
     <p>No permission is used for data collection, advertising, or analytics.</p>
 
     <h2>Third-Party Services</h2>
     <p>
-        Dot Launcher does not use analytics platforms, advertising networks, or any other
-        third-party tracking services. The only third-party component is
-        <strong>Google Play Billing</strong> (used for in-app purchases), which is governed
-        by Google's own privacy policy.
+        Dot Launcher does not use analytics platforms, advertising networks, or any
+        third-party tracking services. The only third-party components are Google's own
+        <strong>Google Play Billing</strong> (for in-app purchases) and
+        <strong>Google Play In-App Updates</strong> (for update prompts), both governed
+        by Google's privacy policy.
     </p>
     <p>
         Dot Launcher includes a simple <strong>local crash reporter</strong>. If the app
@@ -108,15 +134,42 @@
         automatically.</strong> On the next launch after a crash, you will be shown a
         single prompt asking whether you'd like to send the report. If you choose to send
         it, your own email client opens with the log pre-filled — you review it and decide
-        whether to send. If you dismiss the prompt, the log is deleted immediately and you
-        will never be asked again about that crash.
+        whether to send. If you dismiss the prompt, the log is deleted immediately and
+        you will never be asked again about that crash.
+    </p>
+
+    <h2 id="data-deletion">Data Deletion</h2>
+    <p>
+        Because Dot Launcher does not collect or store data on its own servers, there is
+        nothing on our side to delete. Your purchase record is held by Google and tied to
+        your Google account.
+    </p>
+    <p>To delete or manage that data:</p>
+    <ul>
+        <li>
+            Manage data Google holds about you at
+            <a href="https://myaccount.google.com/data-and-privacy" target="_blank">myaccount.google.com/data-and-privacy</a>.
+        </li>
+        <li>
+            To request a refund (which removes the purchase), see
+            <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play Help — Refunds</a>.
+        </li>
+        <li>
+            Uninstalling Dot Launcher removes all on-device data, including your saved
+            preferences and any locally stored crash log.
+        </li>
+    </ul>
+    <p>
+        For any other request, email
+        <a class="contact" href="mailto:apmapps.help@gmail.com">apmapps.help@gmail.com</a>
+        and we will respond within 30 days.
     </p>
 
     <h2>Children's Privacy</h2>
     <p>
-        Dot Launcher does not knowingly collect any personal information from anyone,
-        including children under 13. Because we collect no personal data at all,
-        the app is safe for general use.
+        Dot Launcher is not directed to children under 13 and we do not knowingly collect
+        personal information from children. If you believe a child has provided personal
+        information, please contact us and we will take appropriate steps.
     </p>
 
     <h2>Changes to This Policy</h2>
